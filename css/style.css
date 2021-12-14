@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+      /* font-family: "MedievalSharp", cursive; */
+    }
+    body{
+      background-color: rgb(12, 8, 1);
+      width: 100%;
+    }
+    
+    #body-background {
+      background-color: rgba(199, 170, 154, 0.616);
+      width: 500px;
+      height: 680px;
+      margin: 20px auto;
+      text-align: center;
+      /* margin-top: 4px; */
+      font-size: 25px;
+      box-shadow: 0 3px 5px  rgba(250, 249, 246, 0.75);
+      border-radius: 10px;
+    }
+    #circle {
+      background-color: rgb(9, 73, 28);
+      width: 340px;
+      height: 340px;
+      color: black;
+      border-radius: 100%;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      font-size: 20px;
+      margin-top: 20px;
+      z-index: -1;
+      animation: shake;
+    }
+    h4 {
+      padding-top: 45px;
+    }
+   
+    h5{
+      font-size: 25px;
+    }
+    button {
+      font-size: 20px;
+    }
+  input{
+    box-shadow: 0 3px 10px  rgba(212, 148, 7, 0.75);
+  }
+    #paragraph {
+      border-radius: 100%;
+      background-color: white;
+      height: 200px;
+      width: 200px;
+      text-align: center;
+      padding-top: 70px;
+      font-size: 27px;
+      
+    }
+    @keyframes spin1 {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes idle {
+      40% {
+      }
+    }
+  
+    .glow-on-hover {
+      width: 100px;
+      height: 50px;
+      border: none;
+      outline: none;
+      color: #fff;
+      background: rgb(165, 123, 123);
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+  }
+  .glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .glow-on-hover:active {
+    color: #000
+  }
+  
+  .glow-on-hover:active:after {
+    background: transparent;
+  }
+  
+  .glow-on-hover:hover:before {
+    opacity: 3;
+  }
+  
+  .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+  .c {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    background: white;
+    border-radius: 50%;
+  }
+  
