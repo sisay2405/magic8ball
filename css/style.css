@@ -46,6 +46,7 @@
     }
   input{
     box-shadow: 0 3px 10px  rgba(212, 148, 7, 0.75);
+    border-radius: 6px;
   }
     #paragraph {
       border-radius: 100%;
@@ -126,4 +127,3 @@
     background: white;
     border-radius: 50%;
   }
-  
